@@ -38,7 +38,6 @@ function LoginPage() {
 
   const handleCredentials = (e) => {
     setUserCredentials({ ...userCredentials, [e.target.name]: e.target.value })
-    console.log(userCredentials);
   }
 
 
@@ -94,7 +93,6 @@ function LoginPage() {
 
     try {
       const user = await signIn(userCredentials.email, userCredentials.password);
-      console.log(user);
 
     } catch (error) {
       console.log(error)
@@ -112,12 +110,6 @@ function LoginPage() {
   }
 
 
-  
-  useEffect(() => {
-    console.log(auth.currentUser);
-
-
-  }, [])
 
 
 
