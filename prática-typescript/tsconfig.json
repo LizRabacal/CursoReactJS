@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        //versao javascript
+        "target": "ES6",
+        "rootDir": "./src",
+        //pasta js
+        "outDir": "./dist",
+        "strictNullChecks": true,
+        "noImplicitAny": true
+
+
+    }   
+}
